@@ -4,203 +4,69 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Federación Salvadoreña de Ciclismo | FSC</title>
-  <meta name="description" content="Sitio oficial de la Federación Salvadoreña de Ciclismo. Noticias, eventos, resultados, licencias, modalidades y desarrollo del ciclismo en El Salvador.">
+  <meta name="description" content="Sitio oficial de la Federación Salvadoreña de Ciclismo. Disciplinas, clubes, calendario, resultados, licencias, noticias y transparencia.">
   <meta name="robots" content="index,follow">
   <link rel="canonical" href="https://fsc.org.sv/">
   <meta property="og:title" content="Federación Salvadoreña de Ciclismo">
-  <meta property="og:description" content="El ciclismo salvadoreño, conectado en un solo lugar.">
+  <meta property="og:description" content="El ciclismo salvadoreño conectado en un solo lugar.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://fsc.org.sv/">
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: {
-            sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
-            display: ['Manrope', 'Inter', 'ui-sans-serif', 'system-ui', 'sans-serif']
-          },
-          boxShadow: {
-            soft: '0 20px 60px rgba(15, 23, 42, .08)'
-          }
-        }
-      }
-    }
+    tailwind.config={theme:{extend:{colors:{fsc:{50:'#f4f7fb',100:'#e8eef8',500:'#4f6fa9',600:'#3f5f98',700:'#304b7b',900:'#20252d'}},fontFamily:{sans:['Inter','ui-sans-serif','system-ui','sans-serif'],display:['Manrope','Inter','ui-sans-serif','system-ui','sans-serif']},boxShadow:{soft:'0 20px 60px rgba(15,23,42,.08)'}}}}
   </script>
   <style>
-    html { scroll-behavior: smooth; }
-    body { text-rendering: optimizeLegibility; }
-    .hero-overlay { background: linear-gradient(90deg, rgba(2,6,23,.88) 0%, rgba(2,6,23,.58) 48%, rgba(2,6,23,.18) 100%); }
+    html{scroll-behavior:smooth}body{text-rendering:optimizeLegibility}.hero-overlay{background:linear-gradient(90deg,rgba(8,17,31,.92) 0%,rgba(8,17,31,.62) 48%,rgba(8,17,31,.18) 100%)}
   </style>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"SportsOrganization","name":"Federación Salvadoreña de Ciclismo","url":"https://fsc.org.sv/","sport":"Cycling","areaServed":"El Salvador"}</script>
 </head>
 <body class="bg-white text-slate-900 antialiased">
-  <a href="#contenido" class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-50 focus:rounded-lg focus:bg-white focus:px-4 focus:py-2 focus:shadow">Saltar al contenido</a>
+  <a href="#contenido" class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded-lg focus:bg-white focus:px-4 focus:py-2">Saltar al contenido</a>
 
-  <header class="sticky top-0 z-40 border-b border-slate-200/80 bg-white/90 backdrop-blur">
+  <div class="bg-fsc-900 text-white">
+    <div class="mx-auto flex max-w-7xl items-center justify-between px-5 py-2 text-xs lg:px-8">
+      <span>El ciclismo nos une</span><div class="hidden gap-5 text-white/70 sm:flex"><a href="#noticias">Noticias</a><a href="#eventos">Calendario</a><a href="#transparencia">Transparencia</a></div>
+    </div>
+  </div>
+  <header class="sticky top-0 z-40 border-b border-slate-200/80 bg-white/95 backdrop-blur">
     <div class="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8">
-      <a href="#" class="flex items-center gap-3" aria-label="Inicio FSC">
-        <div class="grid h-11 w-11 place-items-center rounded-full border border-slate-200 bg-white text-sm font-bold">FSC</div>
-        <div>
-          <p class="font-display text-sm font-extrabold uppercase tracking-[0.16em]">Federación Salvadoreña</p>
-          <p class="text-xs text-slate-500">de Ciclismo</p>
-        </div>
-      </a>
-      <nav class="hidden items-center gap-7 text-sm font-medium lg:flex" aria-label="Navegación principal">
-        <a class="hover:text-slate-500" href="#federacion">Federación</a>
-        <a class="hover:text-slate-500" href="#modalidades">Modalidades</a>
-        <a class="hover:text-slate-500" href="#eventos">Eventos</a>
-        <a class="hover:text-slate-500" href="#noticias">Noticias</a>
-        <a class="hover:text-slate-500" href="#documentos">Documentos</a>
-        <a class="hover:text-slate-500" href="#contacto">Contacto</a>
-      </nav>
-      <a href="#licencias" class="rounded-full bg-slate-950 px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-slate-800">Licencias y afiliación</a>
+      <a href="/" class="flex items-center gap-3" aria-label="Inicio FSC"><div class="grid h-11 w-16 place-items-center rounded-xl bg-fsc-100 font-black italic text-fsc-700">FSC</div><div><p class="text-sm font-extrabold leading-4">Federación Salvadoreña</p><p class="text-xs text-slate-500">de Ciclismo</p></div></a>
+      <nav class="hidden items-center gap-6 text-sm font-semibold lg:flex" aria-label="Navegación principal"><a href="#federacion">Federación</a><a href="#disciplinas">Disciplinas</a><a href="#eventos">Eventos</a><a href="#clubes">Clubes</a><a href="#transparencia">Transparencia</a><a href="#noticias">Noticias</a></nav>
+      <a href="#licencias" class="rounded-full bg-fsc-700 px-5 py-2.5 text-sm font-bold text-white">Licencias</a>
     </div>
   </header>
 
   <main id="contenido">
     <section class="relative isolate overflow-hidden bg-slate-950">
-      <img src="https://cdn-pro.elsalvador.com/wp-content/uploads/2024/02/Ciclismo-BMX-El-Salvador-2024.jpg" alt="Atleta de BMX en una pista de El Salvador" class="absolute inset-0 h-full w-full object-cover object-center opacity-80">
+      <img src="https://cdn-pro.elsalvador.com/wp-content/uploads/2024/02/Ciclismo-BMX-El-Salvador-2024.jpg" alt="Ciclista BMX en El Salvador" class="absolute inset-0 h-full w-full object-cover opacity-80">
       <div class="hero-overlay absolute inset-0"></div>
-      <div class="relative mx-auto grid min-h-[76vh] max-w-7xl items-end px-5 pb-16 pt-28 lg:px-8 lg:pb-24">
-        <div class="max-w-3xl">
-          <span class="inline-flex rounded-full border border-white/20 bg-white/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.18em] text-white/90 backdrop-blur">Ciclismo de El Salvador</span>
-          <h1 class="mt-6 font-display text-5xl font-extrabold leading-[.98] tracking-tight text-white sm:text-6xl lg:text-7xl">Más deporte.<br>Más comunidad.<br>Más futuro.</h1>
-          <p class="mt-6 max-w-2xl text-lg leading-8 text-white/80">La casa digital del ciclismo salvadoreño: información oficial, calendario, resultados, licencias, modalidades y desarrollo deportivo en un solo lugar.</p>
-          <div class="mt-8 flex flex-wrap gap-3">
-            <a href="#eventos" class="rounded-full bg-white px-6 py-3 text-sm font-bold text-slate-950">Ver calendario</a>
-            <a href="#licencias" class="rounded-full border border-white/30 bg-white/10 px-6 py-3 text-sm font-bold text-white backdrop-blur">Federarse</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="border-b border-slate-200 bg-white">
-      <div class="mx-auto grid max-w-7xl gap-px bg-slate-200 sm:grid-cols-2 lg:grid-cols-4">
-        <a href="#eventos" class="group bg-white p-6 transition hover:bg-slate-50">
-          <span class="text-xs font-bold uppercase tracking-[0.18em] text-slate-400">Próximo paso</span>
-          <h2 class="mt-2 font-display text-xl font-bold">Calendario nacional</h2>
-          <p class="mt-2 text-sm text-slate-500">Fechas, sedes y convocatorias.</p>
-        </a>
-        <a href="#licencias" class="group bg-white p-6 transition hover:bg-slate-50">
-          <span class="text-xs font-bold uppercase tracking-[0.18em] text-slate-400">Atletas</span>
-          <h2 class="mt-2 font-display text-xl font-bold">Licencia FSC / UCI</h2>
-          <p class="mt-2 text-sm text-slate-500">Requisitos y proceso de afiliación.</p>
-        </a>
-        <a href="#documentos" class="group bg-white p-6 transition hover:bg-slate-50">
-          <span class="text-xs font-bold uppercase tracking-[0.18em] text-slate-400">Institucional</span>
-          <h2 class="mt-2 font-display text-xl font-bold">Documentos oficiales</h2>
-          <p class="mt-2 text-sm text-slate-500">Normativas, reglamentos y transparencia.</p>
-        </a>
-        <a href="#resultados" class="group bg-white p-6 transition hover:bg-slate-50">
-          <span class="text-xs font-bold uppercase tracking-[0.18em] text-slate-400">Competencia</span>
-          <h2 class="mt-2 font-display text-xl font-bold">Resultados</h2>
-          <p class="mt-2 text-sm text-slate-500">Consulta resultados y clasificaciones.</p>
-        </a>
+      <div class="relative mx-auto grid min-h-[72vh] max-w-7xl items-end px-5 pb-16 pt-28 lg:px-8 lg:pb-24">
+        <div class="max-w-3xl"><p class="text-xs font-bold uppercase tracking-[.22em] text-blue-200">Federación Salvadoreña de Ciclismo</p><h1 class="mt-5 font-display text-5xl font-extrabold leading-[.98] tracking-tight text-white sm:text-6xl lg:text-7xl">Más ciclismo<br><span class="text-blue-300">para El Salvador.</span></h1><p class="mt-6 max-w-2xl text-lg leading-8 text-white/80">Impulsamos el deporte, sus disciplinas y comunidades con organización, desarrollo, transparencia y visión de futuro.</p><div class="mt-8 flex flex-wrap gap-3"><a href="#disciplinas" class="rounded-full bg-white px-6 py-3 text-sm font-bold text-slate-950">Explorar disciplinas</a><a href="#eventos" class="rounded-full border border-white/30 bg-white/10 px-6 py-3 text-sm font-bold text-white backdrop-blur">Calendario nacional</a></div></div>
       </div>
     </section>
 
     <section id="federacion" class="mx-auto max-w-7xl px-5 py-20 lg:px-8 lg:py-28">
-      <div class="grid gap-12 lg:grid-cols-[.8fr_1.2fr] lg:items-start">
-        <div>
-          <p class="text-sm font-bold uppercase tracking-[0.2em] text-slate-400">Nuestra Federación</p>
-          <h2 class="mt-4 font-display text-4xl font-extrabold tracking-tight sm:text-5xl">Impulsamos el ciclismo salvadoreño.</h2>
-        </div>
-        <div class="grid gap-8 sm:grid-cols-2">
-          <div>
-            <h3 class="font-display text-xl font-bold">Misión</h3>
-            <p class="mt-3 leading-7 text-slate-600">Promover, organizar y desarrollar el ciclismo en todas sus modalidades, fortaleciendo atletas, clubes, entrenadores, jueces y comunidades.</p>
-          </div>
-          <div>
-            <h3 class="font-display text-xl font-bold">Visión</h3>
-            <p class="mt-3 leading-7 text-slate-600">Construir una federación moderna, transparente y conectada, con alto nivel deportivo y una experiencia digital a la altura del ciclismo nacional.</p>
-          </div>
-        </div>
-      </div>
+      <div class="grid gap-12 lg:grid-cols-[.8fr_1.2fr] lg:items-start"><div><p class="text-sm font-bold uppercase tracking-[.2em] text-fsc-600">Nuestra Federación</p><h2 class="mt-4 font-display text-4xl font-extrabold tracking-tight sm:text-5xl">Una institución al servicio del ciclismo.</h2></div><div class="grid gap-8 sm:grid-cols-2"><div><h3 class="text-xl font-bold">Desarrollo deportivo</h3><p class="mt-3 leading-7 text-slate-600">Organizamos, acompañamos y fortalecemos atletas, clubes, entrenadores, jueces, familias y comunidades.</p></div><div><h3 class="text-xl font-bold">Gestión transparente</h3><p class="mt-3 leading-7 text-slate-600">La información institucional, normativa y de gestión debe ser clara, pública y fácil de consultar.</p></div></div></div>
     </section>
 
-    <section id="modalidades" class="bg-slate-50 py-20 lg:py-28">
-      <div class="mx-auto max-w-7xl px-5 lg:px-8">
-        <div class="flex flex-col justify-between gap-6 sm:flex-row sm:items-end">
-          <div>
-            <p class="text-sm font-bold uppercase tracking-[0.2em] text-slate-400">Modalidades</p>
-            <h2 class="mt-3 font-display text-4xl font-extrabold tracking-tight">Una federación, muchas formas de competir.</h2>
-          </div>
-          <a href="#" class="text-sm font-bold underline underline-offset-4">Conocer todas</a>
-        </div>
-        <div class="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
-          <article class="rounded-3xl bg-white p-7 shadow-soft"><span class="text-xs font-bold text-slate-400">01</span><h3 class="mt-10 font-display text-2xl font-bold">Ruta</h3><p class="mt-2 text-sm leading-6 text-slate-500">Competencia, resistencia y estrategia sobre carretera.</p></article>
-          <article class="rounded-3xl bg-slate-950 p-7 text-white shadow-soft"><span class="text-xs font-bold text-white/40">02</span><h3 class="mt-10 font-display text-2xl font-bold">BMX Racing</h3><p class="mt-2 text-sm leading-6 text-white/60">Velocidad, técnica y precisión desde el gate hasta la meta.</p></article>
-          <article class="rounded-3xl bg-white p-7 shadow-soft"><span class="text-xs font-bold text-slate-400">03</span><h3 class="mt-10 font-display text-2xl font-bold">MTB</h3><p class="mt-2 text-sm leading-6 text-slate-500">Desempeño, control y aventura en terrenos naturales.</p></article>
-          <article class="rounded-3xl bg-white p-7 shadow-soft"><span class="text-xs font-bold text-slate-400">04</span><h3 class="mt-10 font-display text-2xl font-bold">Pista</h3><p class="mt-2 text-sm leading-6 text-slate-500">Potencia, velocidad y táctica en velódromo.</p></article>
-        </div>
-      </div>
-    </section>
+    <section id="disciplinas" class="bg-slate-50 py-20 lg:py-28"><div class="mx-auto max-w-7xl px-5 lg:px-8"><div class="flex flex-col justify-between gap-6 sm:flex-row sm:items-end"><div><p class="text-sm font-bold uppercase tracking-[.2em] text-fsc-600">Nuestras disciplinas</p><h2 class="mt-3 font-display text-4xl font-extrabold tracking-tight">Un país que avanza sobre ruedas.</h2><p class="mt-3 max-w-2xl text-slate-600">Cada disciplina cuenta con su propio espacio para noticias, calendario, resultados, ranking, clubes, atletas y documentos.</p></div></div><div class="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
+      <a href="#" class="group min-h-72 rounded-3xl bg-white p-7 shadow-soft transition hover:-translate-y-1"><span class="text-xs font-bold text-fsc-600">01</span><h3 class="mt-24 text-2xl font-extrabold">Ruta</h3><p class="mt-2 text-sm text-slate-500">Resistencia, estrategia y velocidad.</p><span class="mt-5 inline-block text-sm font-bold text-fsc-700">Explorar Ruta →</span></a>
+      <a href="bmx/" class="group min-h-72 rounded-3xl bg-fsc-900 p-7 text-white shadow-soft transition hover:-translate-y-1"><span class="text-xs font-bold text-blue-300">02</span><h3 class="mt-24 text-2xl font-extrabold">BMX Racing</h3><p class="mt-2 text-sm text-white/60">Velocidad, técnica y precisión.</p><span class="mt-5 inline-block text-sm font-bold text-blue-300">Entrar al micrositio →</span></a>
+      <a href="#" class="group min-h-72 rounded-3xl bg-white p-7 shadow-soft transition hover:-translate-y-1"><span class="text-xs font-bold text-fsc-600">03</span><h3 class="mt-24 text-2xl font-extrabold">MTB</h3><p class="mt-2 text-sm text-slate-500">Naturaleza, desafío y superación.</p><span class="mt-5 inline-block text-sm font-bold text-fsc-700">Explorar MTB →</span></a>
+      <a href="#" class="group min-h-72 rounded-3xl bg-white p-7 shadow-soft transition hover:-translate-y-1"><span class="text-xs font-bold text-fsc-600">04</span><h3 class="mt-24 text-2xl font-extrabold">Pista</h3><p class="mt-2 text-sm text-slate-500">Precisión, potencia y rendimiento.</p><span class="mt-5 inline-block text-sm font-bold text-fsc-700">Explorar Pista →</span></a>
+    </div></div></section>
 
-    <section id="eventos" class="mx-auto max-w-7xl px-5 py-20 lg:px-8 lg:py-28">
-      <div class="grid gap-10 lg:grid-cols-[.7fr_1.3fr]">
-        <div>
-          <p class="text-sm font-bold uppercase tracking-[0.2em] text-slate-400">Agenda</p>
-          <h2 class="mt-3 font-display text-4xl font-extrabold tracking-tight">Próximos eventos.</h2>
-          <p class="mt-4 max-w-md leading-7 text-slate-600">Un calendario pensado para atletas, clubes, familias, medios y aficionados.</p>
-        </div>
-        <div class="divide-y divide-slate-200 border-y border-slate-200">
-          <article class="grid gap-4 py-6 sm:grid-cols-[110px_1fr_auto] sm:items-center"><div><span class="text-3xl font-extrabold">14</span><span class="ml-2 text-sm text-slate-500">SEP</span></div><div><h3 class="font-display text-xl font-bold">Copa Nacional de Ruta</h3><p class="mt-1 text-sm text-slate-500">San Salvador · Ruta</p></div><a href="#" class="text-sm font-bold">Detalles →</a></article>
-          <article class="grid gap-4 py-6 sm:grid-cols-[110px_1fr_auto] sm:items-center"><div><span class="text-3xl font-extrabold">28</span><span class="ml-2 text-sm text-slate-500">SEP</span></div><div><h3 class="font-display text-xl font-bold">Fecha Nacional BMX Racing</h3><p class="mt-1 text-sm text-slate-500">San Andrés · BMX</p></div><a href="#" class="text-sm font-bold">Detalles →</a></article>
-          <article class="grid gap-4 py-6 sm:grid-cols-[110px_1fr_auto] sm:items-center"><div><span class="text-3xl font-extrabold">12</span><span class="ml-2 text-sm text-slate-500">OCT</span></div><div><h3 class="font-display text-xl font-bold">Campeonato MTB XCO</h3><p class="mt-1 text-sm text-slate-500">Sede por confirmar · MTB</p></div><a href="#" class="text-sm font-bold">Detalles →</a></article>
-        </div>
-      </div>
-    </section>
+    <section class="bg-fsc-900 py-20 text-white lg:py-24" aria-labelledby="accion-title"><div class="mx-auto max-w-7xl px-5 lg:px-8"><div class="grid gap-10 lg:grid-cols-[.8fr_1.2fr] lg:items-end"><div><p class="text-sm font-bold uppercase tracking-[.2em] text-blue-300">Federación en acción</p><h2 id="accion-title" class="mt-3 font-display text-4xl font-extrabold tracking-tight sm:text-5xl">Lo que hacemos se traduce en oportunidades.</h2><p class="mt-4 max-w-xl leading-7 text-white/65">Una vista clara del alcance de la Federación y del trabajo desarrollado para atletas, clubes, técnicos, familias y el ciclismo nacional.</p></div><div class="grid grid-cols-2 gap-px overflow-hidden rounded-3xl bg-white/10 md:grid-cols-5"><div class="bg-white/5 p-6"><strong class="block text-3xl">+XX</strong><span class="mt-2 block text-xs text-white/60">Atletas federados</span></div><div class="bg-white/5 p-6"><strong class="block text-3xl">+XX</strong><span class="mt-2 block text-xs text-white/60">Clubes</span></div><div class="bg-white/5 p-6"><strong class="block text-3xl">+XX</strong><span class="mt-2 block text-xs text-white/60">Eventos organizados</span></div><div class="bg-white/5 p-6"><strong class="block text-3xl">+XX</strong><span class="mt-2 block text-xs text-white/60">Capacitaciones</span></div><div class="bg-white/5 p-6"><strong class="block text-3xl">+XX</strong><span class="mt-2 block text-xs text-white/60">Disciplinas</span></div></div></div></div></section>
 
-    <section id="noticias" class="bg-slate-950 py-20 text-white lg:py-28">
-      <div class="mx-auto max-w-7xl px-5 lg:px-8">
-        <div class="flex items-end justify-between gap-6">
-          <div><p class="text-sm font-bold uppercase tracking-[0.2em] text-white/40">Actualidad</p><h2 class="mt-3 font-display text-4xl font-extrabold tracking-tight">Noticias FSC</h2></div>
-          <a href="#" class="hidden text-sm font-bold sm:block">Ver todas →</a>
-        </div>
-        <div class="mt-10 grid gap-6 lg:grid-cols-3">
-          <article class="group overflow-hidden rounded-3xl bg-white/5"><div class="aspect-[16/10] overflow-hidden bg-white/10"><img src="https://www.noticiaslagaceta.com/wp-content/uploads/2023/07/BMX.jpg" alt="Pista BMX en San Andrés" class="h-full w-full object-cover transition duration-500 group-hover:scale-105"></div><div class="p-6"><p class="text-xs uppercase tracking-[.16em] text-white/40">BMX · 08 SEP 2026</p><h3 class="mt-3 font-display text-2xl font-bold">El BMX salvadoreño continúa fortaleciendo su calendario nacional</h3><p class="mt-3 text-sm leading-6 text-white/60">Información de muestra para el prototipo.</p></div></article>
-          <article class="rounded-3xl bg-white p-7 text-slate-950"><p class="text-xs uppercase tracking-[.16em] text-slate-400">Institucional · 05 SEP 2026</p><h3 class="mt-4 font-display text-2xl font-bold">Nueva etapa de modernización institucional y digital</h3><p class="mt-4 leading-7 text-slate-500">Una experiencia digital más clara, accesible y útil para toda la comunidad ciclista.</p><a href="#" class="mt-8 inline-block text-sm font-bold">Leer noticia →</a></article>
-          <article class="rounded-3xl border border-white/10 p-7"><p class="text-xs uppercase tracking-[.16em] text-white/40">Ruta · 01 SEP 2026</p><h3 class="mt-4 font-display text-2xl font-bold">Convocatoria abierta para próxima fecha del calendario</h3><p class="mt-4 leading-7 text-white/60">Consulta categorías, requisitos, horarios y proceso de inscripción.</p><a href="#" class="mt-8 inline-block text-sm font-bold">Leer noticia →</a></article>
-        </div>
-      </div>
-    </section>
+    <section id="clubes" class="mx-auto max-w-7xl px-5 py-20 lg:px-8 lg:py-28"><div class="flex flex-col justify-between gap-6 lg:flex-row lg:items-end"><div><p class="text-sm font-bold uppercase tracking-[.2em] text-fsc-600">Clubes afiliados</p><h2 class="mt-3 font-display text-4xl font-extrabold tracking-tight">La red que mueve el ciclismo.</h2><p class="mt-4 max-w-2xl text-slate-600">Encuentra clubes por disciplina y territorio. Cada club podrá disponer de un perfil oficial con información, atletas, entrenadores, resultados y contacto.</p></div><a href="#" class="text-sm font-bold text-fsc-700">Ver directorio de clubes →</a></div><div class="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-3"><article class="rounded-3xl border border-slate-200 p-7"><span class="text-xs font-bold uppercase tracking-[.16em] text-fsc-600">BMX Racing</span><h3 class="mt-3 text-xl font-extrabold">Club de ejemplo</h3><p class="mt-2 text-sm text-slate-500">San Salvador · Perfil demostrativo</p><a href="bmx/#clubes" class="mt-6 inline-block text-sm font-bold">Ver clubes BMX →</a></article><article class="rounded-3xl border border-slate-200 p-7"><span class="text-xs font-bold uppercase tracking-[.16em] text-fsc-600">Ruta</span><h3 class="mt-3 text-xl font-extrabold">Club de ejemplo</h3><p class="mt-2 text-sm text-slate-500">El Salvador · Perfil demostrativo</p><a href="#" class="mt-6 inline-block text-sm font-bold">Ver clubes de Ruta →</a></article><article class="rounded-3xl border border-slate-200 p-7"><span class="text-xs font-bold uppercase tracking-[.16em] text-fsc-600">MTB</span><h3 class="mt-3 text-xl font-extrabold">Club de ejemplo</h3><p class="mt-2 text-sm text-slate-500">El Salvador · Perfil demostrativo</p><a href="#" class="mt-6 inline-block text-sm font-bold">Ver clubes MTB →</a></article></div></section>
 
-    <section id="licencias" class="mx-auto max-w-7xl px-5 py-20 lg:px-8 lg:py-28">
-      <div class="overflow-hidden rounded-[2rem] bg-slate-100 p-8 sm:p-12 lg:flex lg:items-center lg:justify-between lg:p-16">
-        <div class="max-w-2xl"><p class="text-sm font-bold uppercase tracking-[0.2em] text-slate-400">Afiliación</p><h2 class="mt-3 font-display text-4xl font-extrabold tracking-tight">Haz que tu próximo paso cuente.</h2><p class="mt-4 leading-7 text-slate-600">Consulta requisitos para licencia federativa, afiliación de atletas, clubes y trámites relacionados con competencia nacional e internacional.</p></div>
-        <div class="mt-8 flex flex-wrap gap-3 lg:mt-0"><a href="#" class="rounded-full bg-slate-950 px-6 py-3 text-sm font-bold text-white">Iniciar trámite</a><a href="#" class="rounded-full border border-slate-300 bg-white px-6 py-3 text-sm font-bold">Ver requisitos</a></div>
-      </div>
-    </section>
+    <section id="eventos" class="bg-slate-50 py-20 lg:py-28"><div class="mx-auto max-w-7xl px-5 lg:px-8"><p class="text-sm font-bold uppercase tracking-[.2em] text-fsc-600">Agenda deportiva</p><div class="mt-3 flex items-end justify-between gap-6"><h2 class="font-display text-4xl font-extrabold">Próximos eventos.</h2><a href="#" class="hidden text-sm font-bold text-fsc-700 sm:block">Calendario completo →</a></div><div class="mt-10 grid gap-5 lg:grid-cols-3"><article class="rounded-3xl bg-white p-7"><p class="text-sm font-bold text-fsc-600">15 NOV</p><h3 class="mt-5 text-xl font-extrabold">Campeonato Nacional BMX Racing</h3><p class="mt-2 text-sm text-slate-500">Evento demostrativo · San Andrés</p></article><article class="rounded-3xl bg-white p-7"><p class="text-sm font-bold text-fsc-600">22 NOV</p><h3 class="mt-5 text-xl font-extrabold">Campeonato Nacional de Ruta</h3><p class="mt-2 text-sm text-slate-500">Evento demostrativo</p></article><article class="rounded-3xl bg-white p-7"><p class="text-sm font-bold text-fsc-600">06 DIC</p><h3 class="mt-5 text-xl font-extrabold">Copa Nacional MTB</h3><p class="mt-2 text-sm text-slate-500">Evento demostrativo</p></article></div></div></section>
 
-    <section id="documentos" class="border-y border-slate-200 bg-white py-16">
-      <div class="mx-auto max-w-7xl px-5 lg:px-8">
-        <div class="grid gap-8 md:grid-cols-3">
-          <div><p class="text-xs font-bold uppercase tracking-[.18em] text-slate-400">Institucional</p><h2 class="mt-2 font-display text-3xl font-extrabold">Información pública y documentos</h2></div>
-          <a href="#" class="rounded-2xl border border-slate-200 p-6 hover:bg-slate-50"><p class="text-sm font-bold">Estatutos y reglamentos</p><p class="mt-2 text-sm text-slate-500">Documentación normativa vigente.</p></a>
-          <a href="#" class="rounded-2xl border border-slate-200 p-6 hover:bg-slate-50"><p class="text-sm font-bold">Circulares y convocatorias</p><p class="mt-2 text-sm text-slate-500">Comunicaciones oficiales de la Federación.</p></a>
-        </div>
-      </div>
-    </section>
+    <section id="transparencia" class="mx-auto max-w-7xl px-5 py-20 lg:px-8 lg:py-28"><div class="grid gap-10 lg:grid-cols-2 lg:items-center"><div><p class="text-sm font-bold uppercase tracking-[.2em] text-fsc-600">Transparencia</p><h2 class="mt-3 font-display text-4xl font-extrabold">Una Federación abierta y accesible.</h2><p class="mt-4 max-w-xl leading-7 text-slate-600">Estatutos, reglamentos, memorias de labores, informes, resoluciones, convocatorias y documentos institucionales organizados para facilitar su consulta.</p><a href="#" class="mt-6 inline-block rounded-full bg-fsc-700 px-6 py-3 text-sm font-bold text-white">Explorar transparencia</a></div><div class="grid grid-cols-2 gap-4"><div class="rounded-3xl bg-fsc-50 p-7"><strong class="text-lg">Gobernanza</strong><p class="mt-2 text-sm text-slate-500">Junta Directiva y estructura.</p></div><div class="rounded-3xl bg-fsc-50 p-7"><strong class="text-lg">Normativa</strong><p class="mt-2 text-sm text-slate-500">Estatutos y reglamentos.</p></div><div class="rounded-3xl bg-fsc-50 p-7"><strong class="text-lg">Gestión</strong><p class="mt-2 text-sm text-slate-500">Memorias, informes y proyectos.</p></div><div class="rounded-3xl bg-fsc-50 p-7"><strong class="text-lg">Documentos</strong><p class="mt-2 text-sm text-slate-500">Circulares y resoluciones.</p></div></div></div></section>
+
+    <section id="noticias" class="bg-fsc-900 py-20 text-white lg:py-28"><div class="mx-auto max-w-7xl px-5 lg:px-8"><p class="text-sm font-bold uppercase tracking-[.2em] text-blue-300">Actualidad</p><h2 class="mt-3 font-display text-4xl font-extrabold">Noticias FSC</h2><div class="mt-10 grid gap-6 lg:grid-cols-3"><article class="overflow-hidden rounded-3xl bg-white/5"><div class="aspect-[16/10] bg-white/10"><img src="https://www.noticiaslagaceta.com/wp-content/uploads/2023/07/BMX.jpg" alt="BMX salvadoreño" class="h-full w-full object-cover"></div><div class="p-6"><p class="text-xs text-blue-300">BMX · Archivo</p><h3 class="mt-3 text-xl font-extrabold">El BMX salvadoreño y su desarrollo competitivo</h3><p class="mt-3 text-sm text-white/60">Contenido demostrativo para el prototipo.</p></div></article><article class="rounded-3xl bg-white p-7 text-slate-950"><p class="text-xs uppercase tracking-[.15em] text-slate-400">Institucional</p><h3 class="mt-4 text-xl font-extrabold">Federación en acción</h3><p class="mt-3 text-sm leading-6 text-slate-600">Proyectos, capacitaciones, gestión y trabajo institucional tendrán visibilidad permanente.</p></article><article class="rounded-3xl border border-white/10 p-7"><p class="text-xs uppercase tracking-[.15em] text-blue-300">Disciplinas</p><h3 class="mt-4 text-xl font-extrabold">Cada modalidad con su propia actualidad</h3><p class="mt-3 text-sm leading-6 text-white/60">Noticias filtradas automáticamente por disciplina desde una sola plataforma.</p></article></div></div></section>
   </main>
 
-  <footer id="contacto" class="bg-white">
-    <div class="mx-auto grid max-w-7xl gap-10 px-5 py-14 lg:grid-cols-[1.4fr_.6fr_.6fr] lg:px-8">
-      <div><div class="flex items-center gap-3"><div class="grid h-10 w-10 place-items-center rounded-full border border-slate-200 text-xs font-bold">FSC</div><p class="font-display font-extrabold">Federación Salvadoreña de Ciclismo</p></div><p class="mt-4 max-w-md text-sm leading-6 text-slate-500">Sitio institucional de referencia para el ciclismo federado de El Salvador.</p></div>
-      <div><p class="font-bold">Explorar</p><ul class="mt-4 space-y-2 text-sm text-slate-500"><li><a href="#eventos">Calendario</a></li><li><a href="#noticias">Noticias</a></li><li><a href="#documentos">Documentos</a></li><li><a href="#licencias">Licencias</a></li></ul></div>
-      <div><p class="font-bold">Federación</p><ul class="mt-4 space-y-2 text-sm text-slate-500"><li><a href="#federacion">Nosotros</a></li><li><a href="#modalidades">Modalidades</a></li><li><a href="#">Transparencia</a></li><li><a href="#">Contacto</a></li></ul></div>
-    </div>
-    <div class="border-t border-slate-200"><div class="mx-auto flex max-w-7xl flex-col gap-2 px-5 py-5 text-xs text-slate-400 sm:flex-row sm:justify-between lg:px-8"><p>© 2026 Federación Salvadoreña de Ciclismo.</p><p>Prototipo funcional · contenido demostrativo</p></div></div>
-  </footer>
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "SportsOrganization",
-    "name": "Federación Salvadoreña de Ciclismo",
-    "url": "https://fsc.org.sv/",
-    "sport": "Cycling",
-    "areaServed": "El Salvador"
-  }
-  </script>
+  <footer class="bg-[#151a21] text-white"><div class="mx-auto grid max-w-7xl gap-10 px-5 py-14 md:grid-cols-4 lg:px-8"><div><strong class="text-lg">Federación Salvadoreña<br>de Ciclismo</strong><p class="mt-4 text-sm text-white/50">Ciclismo que transforma vidas.</p></div><div><p class="font-bold">Federación</p><div class="mt-4 space-y-2 text-sm text-white/50"><p>Quiénes somos</p><p>Junta Directiva</p><p>Transparencia</p></div></div><div><p class="font-bold">Disciplinas</p><div class="mt-4 space-y-2 text-sm text-white/50"><p>Ruta</p><a href="bmx/" class="block">BMX Racing</a><p>MTB</p><p>Pista</p></div></div><div><p class="font-bold">Contacto</p><p class="mt-4 text-sm leading-6 text-white/50">Velódromo Nacional<br>San Salvador, El Salvador<br>info@fsc.org.sv</p></div></div><div class="border-t border-white/10"><div class="mx-auto flex max-w-7xl flex-col justify-between gap-3 px-5 py-6 text-xs text-white/40 sm:flex-row lg:px-8"><span>© Federación Salvadoreña de Ciclismo</span><span>Prototipo funcional · Contenido y cifras de demostración</span></div></div></footer>
 </body>
 </html>
