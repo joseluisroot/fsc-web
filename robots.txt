@@ -1,0 +1,5 @@
+# FSC prototype environment
+# This GitHub Pages version is a public development preview.
+# Production robots.txt must allow crawling when deployed to https://fsc.org.sv/.
+User-agent: *
+Disallow: /
