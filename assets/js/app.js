@@ -14,6 +14,8 @@ const btn=document.getElementById('menuBtn');const menu=document.getElementById(
 
 const homeSectionsCss=document.createElement('link');homeSectionsCss.rel='stylesheet';homeSectionsCss.href='assets/css/home-sections.css';document.head.appendChild(homeSectionsCss);
 const federationActionCss=document.createElement('link');federationActionCss.rel='stylesheet';federationActionCss.href='assets/css/federation-action.css';document.head.appendChild(federationActionCss);
+const servicesSectionCss=document.createElement('link');servicesSectionCss.rel='stylesheet';servicesSectionCss.href='assets/css/services-section.css';document.head.appendChild(servicesSectionCss);
 import('./home-sections.js')
   .then(()=>import('./federation-action.js'))
+  .then(()=>import('./services-section.js'))
   .catch(error=>console.error('FSC home enhancements:',error));
