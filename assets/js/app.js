@@ -16,6 +16,7 @@ const homeSectionsCss=document.createElement('link');homeSectionsCss.rel='styles
 const federationActionCss=document.createElement('link');federationActionCss.rel='stylesheet';federationActionCss.href='assets/css/federation-action.css';document.head.appendChild(federationActionCss);
 const servicesSectionCss=document.createElement('link');servicesSectionCss.rel='stylesheet';servicesSectionCss.href='assets/css/services-section.css';document.head.appendChild(servicesSectionCss);
 import('./home-sections.js')
+  .then(()=>import('./government-logo.js'))
   .then(()=>import('./federation-action.js'))
   .then(()=>import('./services-section.js'))
   .catch(error=>console.error('FSC home enhancements:',error));
