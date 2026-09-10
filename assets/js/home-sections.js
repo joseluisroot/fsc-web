@@ -78,7 +78,7 @@
       </div>
       <article class="sponsor-card">
         <div class="sponsor-brand" aria-label="Gatorade El Salvador"><span class="gatorade-bolt">G</span><strong>GATORADE</strong><small>EL SALVADOR</small></div>
-        <div class="sponsor-info"><span class="sponsor-type">Patrocinador</span><h3>Gatorade El Salvador</h3><p>Presencia institucional de patrocinio en el prototipo. La relación y alcance deberán validarse con información oficial antes de producción.</p><div class="sponsor-links"><a href="https://www.facebook.com/GatoradeElSalvador/?locale=es_LA" target="_blank" rel="noopener noreferrer">Facebook ↗</a><a href="https://www.instagram.com/gatoradesv/?hl=es" target="_blank" rel="noopener noreferrer">Instagram ↗</a></div></div>
+        <div class="sponsor-info"><span class="sponsor-type">Patrocinador</span><h3>Gatorade El Salvador</h3><p>Presencia institucional de patrocinio en el prototipo. La relación y alcance deberán validarse con información oficial antes de producción.</p><div class="sponsor-links"><a href="https://www.facebook.com/GatoradeElSalvador/?locale=es_LA" target="_blank" rel="noopener noreferrer" aria-label="Facebook de Gatorade El Salvador" title="Facebook de Gatorade El Salvador"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i><span class="sr-only">Facebook</span></a><a href="https://www.instagram.com/gatoradesv/?hl=es" target="_blank" rel="noopener noreferrer" aria-label="Instagram de Gatorade El Salvador" title="Instagram de Gatorade El Salvador"><i class="fa-brands fa-instagram" aria-hidden="true"></i><span class="sr-only">Instagram</span></a></div></div>
       </article>
     </div>
   </section>`;
