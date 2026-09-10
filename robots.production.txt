@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://fsc.org.sv/sitemap.xml
