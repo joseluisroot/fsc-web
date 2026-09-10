@@ -10,3 +10,9 @@ Thumbs.db
 *.log
 *.tmp
 *.swp
+
+# Frontend build dependencies
+node_modules/
+
+# Generated Tailwind build output
+assets/css/tailwind.generated.css
