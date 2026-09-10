@@ -27,6 +27,7 @@ const federationActionCss=document.createElement('link');federationActionCss.rel
 const servicesSectionCss=document.createElement('link');servicesSectionCss.rel='stylesheet';servicesSectionCss.href='assets/css/services-section.css';document.head.appendChild(servicesSectionCss);
 import('./search-icon.js')
   .then(()=>import('./social-links.js'))
+  .then(()=>import('./newsletter-icon.js'))
   .then(()=>import('./home-sections.js'))
   .then(()=>import('./government-logo.js'))
   .then(()=>import('./federation-action.js'))
