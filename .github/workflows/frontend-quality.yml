@@ -1,0 +1,43 @@
+name: Frontend quality
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build-css:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+          cache-dependency-path: package.json
+
+      - name: Install frontend dependencies
+        run: npm install --no-audit --no-fund
+
+      - name: Build production Tailwind CSS
+        run: npm run build:css
+
+      - name: Verify generated stylesheet
+        run: |
+          test -s assets/css/tailwind.generated.css
+          echo "Generated CSS size: $(wc -c < assets/css/tailwind.generated.css) bytes"
+
+      - name: Upload generated CSS artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: tailwind-generated-css
+          path: assets/css/tailwind.generated.css
+          if-no-files-found: error
