@@ -1,1 +1,0 @@
-Uploaded government logo source will be stored as binary asset in a follow-up commit.
